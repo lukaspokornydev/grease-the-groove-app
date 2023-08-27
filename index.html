@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workouts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<main>
+    <div id="input">
+        <label for="minInterval">Minimal interval (in minutes):</label>
+        <input type="number" id="minInterval" value="25" min="20" max="59">
+        <label for="maxInterval">Maximal interval (in minutes):</label>
+        <input type="number" id="maxInterval" value="50" min="21" max="60">
+
+    </div>
+
+    <div id="result">
+        <span id="number"></span><br>
+        <span id="workout"></span>
+    </div>
+
+    <div id="workout-types">
+        <ul>
+            <li>push-ups</li>
+            <li>burpees</li>
+            <li>squats</li>
+            <li>bear crawls</li>
+            <li>mountain climbers</li>
+            <li>overhead crunch</li>
+            <li>dips</li>
+            <li>plank</li>
+            <li>sit-ups</li>
+            <li>glute kickbacks</li>
+            <li>crab walk</li>
+            <li>single-leg glute bridges</li>
+            <li>bench dips</li>
+        </ul>
+    </div>
+
+    <div id="selected-workouts"></div>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+</main>
+
+<div id="changedInfo"></div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
